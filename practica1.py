@@ -18,7 +18,23 @@ def lee_grafo_stdin(grafo):
     Ejemplo retorno: 
         (['A','B','C'],[('A','B'),('B','C'),('C','B')])
     """
-    pass
+    primeraLista = []
+    segundaLista = []
+    tuplas = ()
+    cantV = int (grafo[0])
+
+    for i in range(1 , cantV+1):
+        primeraLista.append(grafo[i])
+
+    print(primeraLista)
+
+    for i in range (cantV+1 , len(grafo)):
+        grafo[i] = grafo[i]
+        segundaLista.append(tuple(grafo[i]))
+    print(segundaLista)
+    
+
+
 
 def lee_grafo_archivo(file_path):
     '''
@@ -80,3 +96,9 @@ def lee_entrada_2():
         pass
     
     print ('leidas {0} lineas').format(count)
+
+def main():
+   # grafo = lee_entrada_1()
+    print(lee_grafo_stdin(['3', 'A', 'B', 'C', 'A B', 'B C', 'C B']))
+if __name__=='__main__':
+    main()
