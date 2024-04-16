@@ -6,6 +6,19 @@
 
 import sys
 
+def eliminar_espacio_tripleta(tripleta):
+    if len(tripleta) != 3:
+        return "Error: La tripla debe tener exactamente tres elementos"
+    
+    tripla_lista = list(tripleta)
+    
+    indice_espacio = tripla_lista.index(' ')
+    
+    tripla_lista.pop(indice_espacio)
+    
+    nueva_tripleta = tuple(tripla_lista)
+    return nueva_tripleta
+
 def lee_grafo_stdin(grafo):
     """
     Recibe como argumento un grafo representado como una lista de tipo:
@@ -24,15 +37,15 @@ def lee_grafo_stdin(grafo):
     cantV = int (grafo[0])
 
     for i in range(1 , cantV+1):
-        primeraLista.append(grafo[i])
-
-    print(primeraLista)
+        primeraLista.append(grafo[i]) 
 
     for i in range (cantV+1 , len(grafo)):
         grafo[i] = grafo[i]
-        segundaLista.append(tuple(grafo[i]))
-    print(segundaLista)
+        segundaLista.append(eliminar_espacio_tripleta(tuple(grafo[i])))
     
+    
+    tuplaFinal = (primeraLista, segundaLista)
+    return tuplaFinal
 
 
 
