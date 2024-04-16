@@ -1,5 +1,5 @@
 #! /usr/bin/python
-#lucio
+
 # 1ra Practica Laboratorio 
 # Teoria de Grafos
 # Consigna: Implementar los siguientes metodos
