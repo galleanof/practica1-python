@@ -5,10 +5,9 @@
 # Consigna: Implementar los siguientes metodos
 
 import sys
+import os
 
 def eliminar_espacio_tripleta(tripleta):
-    if len(tripleta) != 3:
-        return "Error: La tripla debe tener exactamente tres elementos"
     
     tripla_lista = list(tripleta)
     
@@ -40,9 +39,7 @@ def lee_grafo_stdin(grafo):
         primeraLista.append(grafo[i]) 
 
     for i in range (cantV+1 , len(grafo)):
-        grafo[i] = grafo[i]
         segundaLista.append(eliminar_espacio_tripleta(tuple(grafo[i])))
-    
     
     tuplaFinal = (primeraLista, segundaLista)
     return tuplaFinal
@@ -63,7 +60,13 @@ def lee_grafo_archivo(file_path):
     Ejemplo retorno: 
         (['A','B','C'],[('A','B'),('B','C'),('C','B')])
     '''
-    pass
+    data_input = []
+
+    with open(file_path, 'r') as file:
+        for line in file:
+            data_input.append(line.strip())
+
+    return lee_grafo_stdin(data_input)
 
 def imprime_grafo_lista(grafo):
     '''
@@ -112,6 +115,14 @@ def lee_entrada_2():
 
 def main():
    # grafo = lee_entrada_1()
-    print(lee_grafo_stdin(['3', 'A', 'B', 'C', 'A B', 'B C', 'C B']))
+    file_path = "/home/franco/Documents/archivoPython.txt"
+
+    with open(file_path, 'r') as file:
+            file_content = file.read()
+
+    print(file_content)
+    print(lee_grafo_archivo(file_path))
+
+    print(lee_grafo_stdin(['4', 'A', 'B', 'C','D', 'A B', 'B C', 'C D','D A']))
 if __name__=='__main__':
     main()
