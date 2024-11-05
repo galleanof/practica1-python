@@ -1,0 +1,14 @@
+C:\Users\PC\Downloads\TPTarjeta\bin\Debug\netcoreapp7.0\main.exe
+C:\Users\PC\Downloads\TPTarjeta\bin\Debug\netcoreapp7.0\main.deps.json
+C:\Users\PC\Downloads\TPTarjeta\bin\Debug\netcoreapp7.0\main.runtimeconfig.json
+C:\Users\PC\Downloads\TPTarjeta\bin\Debug\netcoreapp7.0\main.dll
+C:\Users\PC\Downloads\TPTarjeta\bin\Debug\netcoreapp7.0\main.pdb
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.AssemblyInfoInputs.cache
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.AssemblyInfo.cs
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.dll
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\refint\main.dll
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.pdb
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\main.genruntimeconfig.cache
+C:\Users\PC\Downloads\TPTarjeta\obj\Debug\netcoreapp7.0\ref\main.dll
